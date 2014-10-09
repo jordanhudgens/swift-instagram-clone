@@ -7,11 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8442C3DB19E5470D00BCA768 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8442C3D919E5470D00BCA768 /* Bolts.framework */; };
+		8442C3DC19E5470D00BCA768 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8442C3DA19E5470D00BCA768 /* Parse.framework */; };
+		8442C3DE19E5478700BCA768 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8442C3DD19E5478700BCA768 /* AudioToolbox.framework */; };
+		8442C3E019E5478C00BCA768 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8442C3DF19E5478C00BCA768 /* CFNetwork.framework */; };
+		8442C3E219E5479200BCA768 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8442C3E119E5479200BCA768 /* CoreGraphics.framework */; };
+		8442C3E419E5479800BCA768 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8442C3E319E5479800BCA768 /* CoreLocation.framework */; };
+		8442C3E619E547A100BCA768 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8442C3E519E547A100BCA768 /* libz.dylib */; };
+		8442C3E819E547A700BCA768 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8442C3E719E547A700BCA768 /* MobileCoreServices.framework */; };
+		8442C3EA19E547AD00BCA768 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8442C3E919E547AD00BCA768 /* QuartzCore.framework */; };
+		8442C3EC19E547B200BCA768 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8442C3EB19E547B200BCA768 /* Security.framework */; };
+		8442C3EE19E547BE00BCA768 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8442C3ED19E547BE00BCA768 /* StoreKit.framework */; };
+		8442C3F019E547C600BCA768 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8442C3EF19E547C600BCA768 /* SystemConfiguration.framework */; };
+		846A416B19E7461C0095BA8B /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846A416919E7461C0095BA8B /* StartViewController.swift */; };
+		846A416C19E7461C0095BA8B /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846A416A19E7461C0095BA8B /* StartViewController.xib */; };
+		846A417019E74F220095BA8B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 846A416F19E74F220095BA8B /* Default-568h@2x.png */; };
 		84A23C6019E4ED6C00D939D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A23C5F19E4ED6C00D939D5 /* AppDelegate.swift */; };
-		84A23C6219E4ED6C00D939D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A23C6119E4ED6C00D939D5 /* ViewController.swift */; };
-		84A23C6519E4ED6C00D939D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A23C6319E4ED6C00D939D5 /* Main.storyboard */; };
 		84A23C6719E4ED6C00D939D5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A23C6619E4ED6C00D939D5 /* Images.xcassets */; };
-		84A23C6A19E4ED6C00D939D5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A23C6819E4ED6C00D939D5 /* LaunchScreen.xib */; };
 		84A23C7619E4ED6C00D939D5 /* PhotogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A23C7519E4ED6C00D939D5 /* PhotogTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,13 +38,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8442C3D919E5470D00BCA768 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../../Downloads/parse-library-1.4.1 (1)/Bolts.framework"; sourceTree = "<group>"; };
+		8442C3DA19E5470D00BCA768 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../../Downloads/parse-library-1.4.1 (1)/Parse.framework"; sourceTree = "<group>"; };
+		8442C3DD19E5478700BCA768 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		8442C3DF19E5478C00BCA768 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		8442C3E119E5479200BCA768 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8442C3E319E5479800BCA768 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8442C3E519E547A100BCA768 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		8442C3E719E547A700BCA768 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		8442C3E919E547AD00BCA768 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8442C3EB19E547B200BCA768 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		8442C3ED19E547BE00BCA768 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		8442C3EF19E547C600BCA768 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8442C3F119E5498700BCA768 /* Photog-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Photog-Bridging-Header.h"; sourceTree = "<group>"; };
+		846A416919E7461C0095BA8B /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		846A416A19E7461C0095BA8B /* StartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
+		846A416F19E74F220095BA8B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		84A23C5A19E4ED6C00D939D5 /* Photog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A23C5E19E4ED6C00D939D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84A23C5F19E4ED6C00D939D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84A23C6119E4ED6C00D939D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		84A23C6419E4ED6C00D939D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84A23C6619E4ED6C00D939D5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		84A23C6919E4ED6C00D939D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		84A23C6F19E4ED6C00D939D5 /* PhotogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A23C7419E4ED6C00D939D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84A23C7519E4ED6C00D939D5 /* PhotogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotogTests.swift; sourceTree = "<group>"; };
@@ -43,6 +68,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8442C3F019E547C600BCA768 /* SystemConfiguration.framework in Frameworks */,
+				8442C3EE19E547BE00BCA768 /* StoreKit.framework in Frameworks */,
+				8442C3EC19E547B200BCA768 /* Security.framework in Frameworks */,
+				8442C3EA19E547AD00BCA768 /* QuartzCore.framework in Frameworks */,
+				8442C3E819E547A700BCA768 /* MobileCoreServices.framework in Frameworks */,
+				8442C3E619E547A100BCA768 /* libz.dylib in Frameworks */,
+				8442C3E419E5479800BCA768 /* CoreLocation.framework in Frameworks */,
+				8442C3E219E5479200BCA768 /* CoreGraphics.framework in Frameworks */,
+				8442C3E019E5478C00BCA768 /* CFNetwork.framework in Frameworks */,
+				8442C3DE19E5478700BCA768 /* AudioToolbox.framework in Frameworks */,
+				8442C3DB19E5470D00BCA768 /* Bolts.framework in Frameworks */,
+				8442C3DC19E5470D00BCA768 /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,9 +93,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		846A416819E741390095BA8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8442C3EF19E547C600BCA768 /* SystemConfiguration.framework */,
+				8442C3ED19E547BE00BCA768 /* StoreKit.framework */,
+				8442C3EB19E547B200BCA768 /* Security.framework */,
+				8442C3E919E547AD00BCA768 /* QuartzCore.framework */,
+				8442C3E719E547A700BCA768 /* MobileCoreServices.framework */,
+				8442C3E519E547A100BCA768 /* libz.dylib */,
+				8442C3E319E5479800BCA768 /* CoreLocation.framework */,
+				8442C3E119E5479200BCA768 /* CoreGraphics.framework */,
+				8442C3DF19E5478C00BCA768 /* CFNetwork.framework */,
+				8442C3DD19E5478700BCA768 /* AudioToolbox.framework */,
+				8442C3D919E5470D00BCA768 /* Bolts.framework */,
+				8442C3DA19E5470D00BCA768 /* Parse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		84A23C5119E4ED6C00D939D5 = {
 			isa = PBXGroup;
 			children = (
+				846A416F19E74F220095BA8B /* Default-568h@2x.png */,
 				84A23C5C19E4ED6C00D939D5 /* Photog */,
 				84A23C7219E4ED6C00D939D5 /* PhotogTests */,
 				84A23C5B19E4ED6C00D939D5 /* Products */,
@@ -78,11 +135,12 @@
 			isa = PBXGroup;
 			children = (
 				84A23C5F19E4ED6C00D939D5 /* AppDelegate.swift */,
-				84A23C6119E4ED6C00D939D5 /* ViewController.swift */,
-				84A23C6319E4ED6C00D939D5 /* Main.storyboard */,
+				846A416919E7461C0095BA8B /* StartViewController.swift */,
+				846A416A19E7461C0095BA8B /* StartViewController.xib */,
+				846A416819E741390095BA8B /* Frameworks */,
 				84A23C6619E4ED6C00D939D5 /* Images.xcassets */,
-				84A23C6819E4ED6C00D939D5 /* LaunchScreen.xib */,
 				84A23C5D19E4ED6C00D939D5 /* Supporting Files */,
+				8442C3F119E5498700BCA768 /* Photog-Bridging-Header.h */,
 			);
 			path = Photog;
 			sourceTree = "<group>";
@@ -102,7 +160,7 @@
 				84A23C7319E4ED6C00D939D5 /* Supporting Files */,
 			);
 			path = PhotogTests;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		84A23C7319E4ED6C00D939D5 /* Supporting Files */ = {
 			isa = PBXGroup;
@@ -192,9 +250,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84A23C6519E4ED6C00D939D5 /* Main.storyboard in Resources */,
-				84A23C6A19E4ED6C00D939D5 /* LaunchScreen.xib in Resources */,
 				84A23C6719E4ED6C00D939D5 /* Images.xcassets in Resources */,
+				846A416C19E7461C0095BA8B /* StartViewController.xib in Resources */,
+				846A417019E74F220095BA8B /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +270,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84A23C6219E4ED6C00D939D5 /* ViewController.swift in Sources */,
 				84A23C6019E4ED6C00D939D5 /* AppDelegate.swift in Sources */,
+				846A416B19E7461C0095BA8B /* StartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,25 +292,6 @@
 			targetProxy = 84A23C7019E4ED6C00D939D5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		84A23C6319E4ED6C00D939D5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				84A23C6419E4ED6C00D939D5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		84A23C6819E4ED6C00D939D5 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				84A23C6919E4ED6C00D939D5 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		84A23C7719E4ED6C00D939D5 /* Debug */ = {
@@ -336,9 +375,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/admin/Downloads/parse-library-1.4.1",
+					"(1)",
+				);
 				INFOPLIST_FILE = Photog/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Photog/Photog-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -346,9 +394,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/admin/Downloads/parse-library-1.4.1",
+					"(1)",
+				);
 				INFOPLIST_FILE = Photog/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Photog/Photog-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -405,6 +461,7 @@
 				84A23C7B19E4ED6C00D939D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84A23C7C19E4ED6C00D939D5 /* Build configuration list for PBXNativeTarget "PhotogTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +470,7 @@
 				84A23C7E19E4ED6C00D939D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
