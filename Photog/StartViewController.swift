@@ -19,4 +19,15 @@ class StartViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    @IBAction func didTapSignIn(sender: AnyObject) {
+        var viewController = AuthViewController(nibName: "AuthViewController", bundle: nil)
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    @IBAction func didTapSignUp(sender: AnyObject) {
+        var viewController = AuthViewController(nibName: "AuthViewController", bundle: nil)
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
 }
