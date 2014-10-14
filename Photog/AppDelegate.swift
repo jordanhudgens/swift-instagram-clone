@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         self.setupParse()
+        self.setupAppAppearance()
         
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
@@ -48,6 +49,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        var testObject = PFObject(className: "TestObject")
 //        testObject["foo"] = "bar"
 //        testObject.saveInBackground()
+    }
+    
+    func setupAppAppearance()
+    {
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
+        UINavigationBar.appearance().barTintColor = UIColor.blackColor()
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
     }
     
     func applicationWillResignActive(application: UIApplication) {
