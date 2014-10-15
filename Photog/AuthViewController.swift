@@ -69,7 +69,38 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
     }
     
     func authenticate() {
-        println("Authenticated was clicked")
+        var email = self.emailTextField?.text
+        var password = self.passwordTextField?.text
+        
+        var myAlert = UIAlertController()
+        
+        if (email?.isEmpty == true || password?.isEmpty == true || email?.isEmailAddress() == false)
+        {
+            // alert the user
+            println("empty string")
+            
+            
+            let alertController = UIAlertController(title: "Validation error", message: "Sorry, you need to enter the appropriate values.", preferredStyle: .Alert)
+            
+            let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) in
+                // ...
+            }
+            alertController.addAction(cancelAction)
+            
+            let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in
+                // ...
+            }
+            alertController.addAction(OKAction)
+            
+            self.presentViewController(alertController, animated: true) {
+                // ...
+            }
+            
+            return
+        }
+        
+        // otherwise, authenticate
+        println("full string")
     }
 
 }
