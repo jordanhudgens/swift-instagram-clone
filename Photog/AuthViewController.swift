@@ -124,7 +124,8 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
             (user: PFUser!, error: NSError!) -> Void in
             
             if (user != nil) {
-                println("Sign in success")
+                var tabBarController = TabBarViewController()
+                self.navigationController?.pushViewController(tabBarController, animated: true)
             } else {
                 println("Sign in failure")
             }
@@ -141,7 +142,8 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
             (succeeded: Bool!, error: NSError!) -> Void in
             
             if error == nil {
-                println("Sign up success")
+                var tabBarController = TabBarViewController()
+                self.navigationController?.pushViewController(tabBarController, animated: true)
             } else {
                 println("Sign up failure")
             }

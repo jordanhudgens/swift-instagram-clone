@@ -30,10 +30,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if PFUser.currentUser() == nil
         {
             navigationController.viewControllers = [startViewController]
-            println("testing")
         } else {
-            //  TODO: Else, present UI for loggin in or creating an account
-            println("we have a user")
+            var tabBarController = TabBarViewController()
+            navigationController.viewControllers = [startViewController, tabBarController]
         }
         
         self.window!.rootViewController = navigationController
@@ -57,6 +56,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().barTintColor = UIColor.blackColor()
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
+        
+        UITabBar.appearance().barTintColor = UIColor.blackColor()
+        UITabBar.appearance().tintColor = UIColor.whiteColor()
     }
     
     func applicationWillResignActive(application: UIApplication) {
