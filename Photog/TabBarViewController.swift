@@ -28,9 +28,13 @@ class TabBarViewController: UITabBarController {
         var viewControllers = [feedViewController, profileViewController, findPeopleViewController, cameraViewController]
         self.setViewControllers(viewControllers, animated: true)
         
+        var imageNames = ["FeedIcon", "ProfileIcon", "SearchIcon", "CameraIcon"]
+        
         let tabItems = tabBar.items as [UITabBarItem]
         for (index, value) in enumerate(tabItems) {
-            value.title = "Hey"
+            var imageName = imageNames[index]
+            value.image = UIImage(named: imageName)
+            value.imageInsets = UIEdgeInsetsMake(5.0, 0, -5.0, 0)
         }
         
         self.edgesForExtendedLayout = UIRectEdge.None
