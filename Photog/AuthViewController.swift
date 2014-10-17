@@ -74,6 +74,9 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
+    
+    //MARK: Authentication methods
+    
     func authenticate() {
         var email = self.emailTextField?.text
         var password = self.passwordTextField?.text
@@ -117,12 +120,32 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
     
     func signIn(email: String, password: String)
     {
-        println("sign in")
+        PFUser.logInWithUsernameInBackground(email, password: password) {
+            (user: PFUser!, error: NSError!) -> Void in
+            
+            if (user != nil) {
+                println("Sign in success")
+            } else {
+                println("Sign in failure")
+            }
+        }
     }
     
     func signUp(email: String, password: String)
     {
-        println("sign up")
+        var user = PFUser()
+        user.username = email
+        user.email = email
+        user.password = password
+        user.signUpInBackgroundWithBlock {
+            (succeeded: Bool!, error: NSError!) -> Void in
+            
+            if error == nil {
+                println("Sign up success")
+            } else {
+                println("Sign up failure")
+            }
+        }
     }
 
 }
