@@ -142,11 +142,34 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
             (succeeded: Bool!, error: NSError!) -> Void in
             
             if error == nil {
-                var tabBarController = TabBarViewController()
-                self.navigationController?.pushViewController(tabBarController, animated: true)
+                
+                // New user follows him/her self
+                self.follow(user, completionHandler: {
+                    (error) -> () in
+                    
+                    if error == nil
+                    {
+                        var tabBarController = TabBarViewController()
+                        self.navigationController?.pushViewController(tabBarController, animated: true)
+                    } else {
+                        println("unable for user to follow themself")
+                    }
+                })
+                
             } else {
                 println("Sign up failure")
             }
+        }
+    }
+    
+    func follow(user: PFUser!, completionHandler:(error: NSError?) -> ())
+    {
+        var relation = PFUser.currentUser().relationForKey("following")
+        relation.addObject(user)
+        PFUser.currentUser().saveInBackgroundWithBlock {
+            (success, error) -> Void in
+            
+            completionHandler(error: error)
         }
     }
 
