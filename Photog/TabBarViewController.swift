@@ -13,8 +13,7 @@ class TabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var feedViewController = UIViewController()
-        feedViewController.view.backgroundColor = UIColor.orangeColor()
+        var feedViewController = FeedViewController(nibName: "FeedViewController", bundle: nil)
         
         var profileViewController = UIViewController()
         profileViewController.view.backgroundColor = UIColor.redColor()
