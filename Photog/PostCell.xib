@@ -15,10 +15,10 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KML-E9-Qdw">
-                        <rect key="frame" x="8" y="8" width="315" height="30"/>
+                        <rect key="frame" x="8" y="9" width="315" height="30"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMN-2w-16a">
-                                <rect key="frame" x="8" y="4" width="42" height="21"/>
+                                <rect key="frame" x="8" y="5" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -37,8 +37,8 @@
                             <constraint firstAttribute="centerY" secondItem="dMN-2w-16a" secondAttribute="centerY" id="mNf-vo-tan"/>
                         </constraints>
                     </view>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ya6-rL-S8F">
-                        <rect key="frame" x="18" y="48" width="300" height="300"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ya6-rL-S8F">
+                        <rect key="frame" x="18" y="49" width="300" height="300"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="300" id="CEf-Gb-umm"/>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="Ccc-cw-y9u"/>
