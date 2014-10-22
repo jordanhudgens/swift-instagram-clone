@@ -20,6 +20,17 @@ class FeedViewController: UIViewController, UITableViewDataSource {
         var nib = UINib(nibName: "PostCell", bundle: nil)
         tableView?.registerNib(nib, forCellReuseIdentifier: "PostCellIdentifier")
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        NetworkManager.sharedInstance.fetchFeed {
+            (objects, error) -> () in
+            
+            println(objects)
+            println(error)
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

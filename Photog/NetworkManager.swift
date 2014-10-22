@@ -31,5 +31,10 @@ public class NetworkManager
         }
     }
     
+    func fetchFeed(completionHandler: (objects: [AnyObject]?, error: NSError?) -> ())
+    {
+        
+    }
+    
     
 }
