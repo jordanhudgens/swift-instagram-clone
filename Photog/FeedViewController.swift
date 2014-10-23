@@ -51,7 +51,7 @@ class FeedViewController: UIViewController, UITableViewDataSource {
         
         var item = items[indexPath.row] as PFObject
         
-        cell.item = item
+        cell.post = item
         
         return cell
     }

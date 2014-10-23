@@ -22,6 +22,7 @@
 		846A416B19E7461C0095BA8B /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846A416919E7461C0095BA8B /* StartViewController.swift */; };
 		846A416C19E7461C0095BA8B /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846A416A19E7461C0095BA8B /* StartViewController.xib */; };
 		846A417019E74F220095BA8B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 846A416F19E74F220095BA8B /* Default-568h@2x.png */; };
+		8478C86319F932DB001CB35D /* NSDate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478C86219F932DB001CB35D /* NSDate+Extensions.swift */; };
 		84A23C6019E4ED6C00D939D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A23C5F19E4ED6C00D939D5 /* AppDelegate.swift */; };
 		84A23C6719E4ED6C00D939D5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A23C6619E4ED6C00D939D5 /* Images.xcassets */; };
 		84A23C7619E4ED6C00D939D5 /* PhotogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A23C7519E4ED6C00D939D5 /* PhotogTests.swift */; };
@@ -63,6 +64,7 @@
 		846A416919E7461C0095BA8B /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		846A416A19E7461C0095BA8B /* StartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
 		846A416F19E74F220095BA8B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		8478C86219F932DB001CB35D /* NSDate+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extensions.swift"; sourceTree = "<group>"; };
 		84A23C5A19E4ED6C00D939D5 /* Photog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A23C5E19E4ED6C00D939D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84A23C5F19E4ED6C00D939D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				84FA3F5819EDF2F500E95DD7 /* String+Extensions.swift */,
+				8478C86219F932DB001CB35D /* NSDate+Extensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				84DC266B19F59C9100DF71F9 /* NetworkManager.swift in Sources */,
 				84FA3F5919EDF2F500E95DD7 /* String+Extensions.swift in Sources */,
 				84A23C6019E4ED6C00D939D5 /* AppDelegate.swift in Sources */,
+				8478C86319F932DB001CB35D /* NSDate+Extensions.swift in Sources */,
 				84DE4B4919ECD4F200288962 /* AuthViewController.swift in Sources */,
 				84A856F619F0C5EF00F166DC /* TabBarViewController.swift in Sources */,
 				846A416B19E7461C0095BA8B /* StartViewController.swift in Sources */,
