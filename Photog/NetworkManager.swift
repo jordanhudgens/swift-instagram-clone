@@ -8,6 +8,8 @@
 
 import Foundation
 
+typealias ObjectsCompletionHandler = (objects: [AnyObject]?, error: NSError?) -> ()
+
 public class NetworkManager
 {
     public class var sharedInstance: NetworkManager
@@ -31,7 +33,7 @@ public class NetworkManager
         }
     }
     
-    func fetchFeed(completionHandler: (objects: [AnyObject]?, error: NSError?) -> ())
+    func fetchFeed(completionHandler: ObjectsCompletionHandler!)
     {
         var relation = PFUser.currentUser().relationForKey("following")
         var query = relation.query()
@@ -39,6 +41,7 @@ public class NetworkManager
             
             if (error != nil) {
                 println("error fetching following")
+                completionHandler(objects: nil, error: error)
             } else {
                 println("sucess fetching following \(objects)")
                 
@@ -49,8 +52,10 @@ public class NetworkManager
                     
                     if (error != nil) {
                         println("error fetching posts")
+                        completionHandler(objects: nil, error: error)
                     } else {
                         println("success fetching feed posts \(objects)")
+                        completionHandler(objects: objects, error: nil)
                     }
                     
                 })

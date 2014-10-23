@@ -10,7 +10,7 @@ import UIKit
 
 class FeedViewController: UIViewController, UITableViewDataSource {
 
-    var items = ["", "", ""]
+    var items = []
     
     @IBOutlet var tableView: UITableView?
     
@@ -27,8 +27,12 @@ class FeedViewController: UIViewController, UITableViewDataSource {
         NetworkManager.sharedInstance.fetchFeed {
             (objects, error) -> () in
             
-            println(objects)
-            println(error)
+            if let constObjects = objects {
+                self.items = constObjects
+                self.tableView?.reloadData()
+            } else if let constError = error {
+                
+            }
         }
     }
 
@@ -45,9 +49,9 @@ class FeedViewController: UIViewController, UITableViewDataSource {
 
         let cell = tableView.dequeueReusableCellWithIdentifier("PostCellIdentifier") as PostCell
         
-//        var item = items[indexPath.row] as PFObject
-//        
-//        cell.item = item
+        var item = items[indexPath.row] as PFObject
+        
+        cell.item = item
         
         return cell
     }
