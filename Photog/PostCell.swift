@@ -23,6 +23,10 @@ class PostCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        
+        self.postImageView?.image = UIImage(named: "PostPlaceholderImage")
+        self.contentView.backgroundColor = UIColor.OMLightGray()
+        
         self.usernameLabel?.text = nil
         self.dateLabel?.text = nil
     }
@@ -30,7 +34,7 @@ class PostCell: UITableViewCell {
     override func prepareForReuse() {
         super.prepareForReuse()
         
-        self.postImageView?.image = nil
+        self.postImageView?.image = UIImage(named: "PostPlaceholderImage")
         self.usernameLabel?.text = nil
         self.dateLabel?.text = nil
         self.post = nil

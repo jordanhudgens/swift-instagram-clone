@@ -27,6 +27,7 @@
 		84A23C6719E4ED6C00D939D5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A23C6619E4ED6C00D939D5 /* Images.xcassets */; };
 		84A23C7619E4ED6C00D939D5 /* PhotogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A23C7519E4ED6C00D939D5 /* PhotogTests.swift */; };
 		84A856F619F0C5EF00F166DC /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A856F519F0C5EF00F166DC /* TabBarViewController.swift */; };
+		84C9B5541A032979002D909F /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C9B5531A032979002D909F /* UIColor+Extensions.swift */; };
 		84DC266B19F59C9100DF71F9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC266A19F59C9100DF71F9 /* NetworkManager.swift */; };
 		84DC266E19F59E8200DF71F9 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC266C19F59E8200DF71F9 /* FeedViewController.swift */; };
 		84DC266F19F59E8200DF71F9 /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84DC266D19F59E8200DF71F9 /* FeedViewController.xib */; };
@@ -73,6 +74,7 @@
 		84A23C7419E4ED6C00D939D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84A23C7519E4ED6C00D939D5 /* PhotogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotogTests.swift; sourceTree = "<group>"; };
 		84A856F519F0C5EF00F166DC /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		84C9B5531A032979002D909F /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		84DC266A19F59C9100DF71F9 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		84DC266C19F59E8200DF71F9 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		84DC266D19F59E8200DF71F9 /* FeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 			children = (
 				84FA3F5819EDF2F500E95DD7 /* String+Extensions.swift */,
 				8478C86219F932DB001CB35D /* NSDate+Extensions.swift */,
+				84C9B5531A032979002D909F /* UIColor+Extensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84DC266B19F59C9100DF71F9 /* NetworkManager.swift in Sources */,
+				84C9B5541A032979002D909F /* UIColor+Extensions.swift in Sources */,
 				84FA3F5919EDF2F500E95DD7 /* String+Extensions.swift in Sources */,
 				84A23C6019E4ED6C00D939D5 /* AppDelegate.swift in Sources */,
 				8478C86319F932DB001CB35D /* NSDate+Extensions.swift in Sources */,
