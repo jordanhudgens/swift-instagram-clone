@@ -50,7 +50,18 @@ class PostCell: UITableViewCell {
             self.dateLabel?.text = date.fuzzyTime()
             
             
-            // Set the image
+            // Download the image and display it
+            NetworkManager.sharedInstance.fetchImage(constPost, completionHandler: {
+                (image, error) -> () in
+                
+                if (image != nil) {
+                    self.postImageView!.image = image
+                } else {
+                    // Alert the user
+                }
+            })
+            
+            
         }
     }
     
