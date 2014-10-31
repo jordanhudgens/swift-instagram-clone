@@ -22,7 +22,18 @@ class PostCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        self.usernameLabel?.text = nil
+        self.dateLabel?.text = nil
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        self.postImageView?.image = nil
+        self.usernameLabel?.text = nil
+        self.dateLabel?.text = nil
+        self.post = nil
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
@@ -32,6 +43,9 @@ class PostCell: UITableViewCell {
     }
     
     func configure() {
+        
+        self.postImageView!.clipsToBounds = true
+        
         if let constPost = post {
             // Set the username label
             var user = constPost["User"] as PFUser
